@@ -1,0 +1,942 @@
+<!--
+  Greetings!
+
+  This delightful template has been meticulously crafted and brought to life by Syed Mohsin. It is generously shared with the world, inviting you to unleash your creativity and tailor it to your heart's content.
+-->
+
+<!-- For any inquiries or collaborations reach out to me at devsyedmohsin@gmail.com -->
+
+<!--
+  Embrace the guidance inscribed within the comments below to fashion an awe-inspiring portfolio of your own.
+-->
+
+
+<!DOCTYPE html>
+
+
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Read and update content attributes accordingly  -->
+
+    <meta
+      name="description"
+      content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations."
+    />
+
+    <!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="Syed Mohsin's Portfolio">
+<meta itemprop="description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<!-- Reference screenshot of updated site's header in place of content -->
+
+
+
+
+
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://ossportfolio.netlify.app">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ilham TIRACH's porfolio">
+<meta property="og:description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta property="og:image" content="assets/images/sharing-card.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Porfolio Ilham TIRACH">
+<meta name="twitter:description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta name="twitter:image" content="assets/images/sharing-card.png">
+
+
+<!-- Update favicon href attribute with image of yourself -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/T (1).png"
+      type="image/png"
+    />
+
+    <!-- Preloading fonts for better performance -->
+
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css"  />
+    <script src="script.js" defer></script>
+
+    <!-- Your name here -->
+    <title>Ilham TIRACH's porfolio</title>
+
+    <style>
+
+#home-section {
+  height: 125vh; /* Par exemple, prenant la hauteur de l'écran */
+  background-image: url("assets/images/image_font.png"); /* Chemin vers votre image de fond */
+  background-size: cover; /* Assurez-vous que l'image de fond couvre toute la zone */
+  background-position: center; /* Centrer l'image de fond */
+  display: flexbox;
+  justify-content: center; /* Centrer horizontalement le contenu */
+  align-items: center; /* Centrer verticalement le contenu */
+}
+
+.container {
+  position: relative; /* Assurez-vous que les éléments enfants sont positionnés par rapport à ce conteneur */
+}
+
+.overlay {
+  /* Assurez-vous que l'overlay couvre toute la section */
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Couleur de l'overlay avec une opacité de 50% */
+}
+
+/* Vous pouvez ajuster les styles selon vos besoins */
+.subheading, .text h1, .text h4, .text h2 {
+  color: white; /* Couleur du texte */
+  text-align: center; /* Centrer le texte horizontalement */
+}
+
+
+h1 span {
+  color: rgb(235, 192, 128); /* Couleur du texte du span */
+}
+
+h2 span {
+  color: rgb(159, 116, 190); /* Couleur du texte du span */
+}
+
+.gold-text {
+      color: rgb(185, 159, 12);
+    }
+
+.text-content {
+  margin-right: 20px; /* Ajoute un espace entre l'image et le texte */
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;/* Aligne les éléments verticalement au centre */
+}
+
+.photos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px; /* Espacement entre les images */
+            justify-content: center;
+        }
+
+        .photos img {
+            max-width: 100%;
+            height: auto;
+        }
+
+
+
+
+.justified-text {
+    text-align: justify;
+  }
+
+  .containerX {
+    display: flex;
+    flex-wrap: wrap; /* Permettre aux éléments de se plier à la ligne si nécessaire */
+  }
+  .left-half, .right-half {
+    width: 50%; /* Diviser la largeur en deux */
+    box-sizing: border-box; /* Inclure la bordure et le remplissage dans la largeur déclarée */
+    padding: 20px; /* Ajouter un espacement autour du contenu */
+  }
+
+
+  form {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px none #ccc;
+    border-radius: 5px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Pour inclure le padding dans la largeur totale */
+  }
+
+  button[type="submit"] {
+    background-color: #453835;
+    color:  #bcb8b8;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #161211;
+  }
+ 
+  {
+         box-sizing: border-box;
+      }
+      body {
+         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h1 {
+         text-align: center;
+      }
+      .skill-mf {
+  font-family: Arial, sans-serif;
+}
+
+.title-s {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.skill-mf span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.pull-right {
+  display: none;
+}
+
+.progress {
+  height: 20px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  background-color: #c0bdbd;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #b8710e;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  transition: width 0.6s ease;
+}
+
+.skill-mf span:nth-child(odd) {
+  font-weight: bold;
+}
+
+.skill-mf span:nth-child(even) {
+  font-weight: normal;
+}
+
+.skill-mf span:last-child {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+.cv-download {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cv-download a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b8710e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.1s ease;
+}
+
+.cv-download a:hover {
+    background-color: #b8710e;
+}
+
+
+/* Reset des marges et des rembourrages par défaut */
+ul {
+  margin: 0;
+  padding: 0;
+   /* Supprime les puces */
+}
+
+/* Style des éléments de la liste */
+ul li {
+  margin-bottom: 8spx; /* Espacement entre chaque élément */
+}
+
+/* Style du titre "Informations personnelles" */
+h2 {
+  font-size: 24px; /* Taille de la police */
+  color: #ffffff; /* Couleur du texte */
+  margin-bottom: 20px; /* Espacement en bas */
+}
+
+/* Style des éléments de la liste (nom, domaine d'intérêt, etc.) */
+ul li {
+  font-size: 18px; /* Taille de la police */
+  color: #f3e2e2; /* Couleur du texte */
+}
+
+
+
+    </style>
+
+
+  </head>
+
+
+
+  <body>
+
+
+
+
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+
+  
+    <!--
+  <div class="menu-btn-container">
+    <div class="container">
+      <button type="button" class="menu-btn">menu</button>
+    </div>
+  </div>
+
+  <nav class="nav hidden">
+    <ol class="nav-items">
+      <li class="nav-item"><a href="#">Accueil</a></li>
+      <li class="nav-item"><a href="#work">À propos</a></li>
+      <li class="nav-item"><a href="#blog">Compétences</a></li>
+      <li class="nav-item"><a href="#skills">certificats</a></li>
+      <li class="nav-item"><a href="#contact" data-focused="last-focused">Contact</a></li>
+    </ol>
+  </nav>
+
+
+-- Ajoutez le contenu de votre page ici -->
+
+
+
+
+<header class="header">
+  <div class="menu-btn-container">
+    <div class="container">
+      <button type="button" class="menu-btn">Menu</button>
+    </div>
+  </div>
+  <nav class="nav hidden">
+    <ol class="nav-items">
+      <li class="nav-item"><a href="#">Accueil</a></li>
+      <li class="nav-item"><a href="#about">À propos</a></li>
+      <li class="nav-item"><a href="#educ">Formation</a></li>
+      
+      <li class="nav-item"><a href="#project">Projets</a></li>
+
+      <li class="nav-item"><a href="#certifs">Certificats</a></li>
+      <li class="nav-item"><a href="#contact" data-focused="last-focused">Contact</a></li>
+    </ol>
+  </nav>
+
+
+
+
+
+<!-- Ajoutez le contenu de votre page ici -->
+
+
+    
+
+    <section id="home-section" class="hero">
+      <div class="home-slider  owl-carousel">
+        <div class="slider-item ">
+         <div class="overlay"></div>
+          <div class="container">
+		 
+	         
+		          	<div class="text">
+		          		
+                
+                  <h1><span>Bonjour tout le monde !</span></h1>
+                  
+                  
+                 
+			            <h2 >Je suis,  <span>Ilham TIRACH</span></h2>
+						      <br>
+						      <br>
+               
+                  
+            
+						
+						
+						           <h4><b> Élève Ingénieur en Business Intelligence & Analytics | Data science enthousiaste  </b></h4>
+                 </div> 
+          </div>
+        </div>
+      </div>
+    
+    </section>
+
+
+
+
+
+
+
+    
+    </header>
+
+   
+
+
+    <div class="content">
+      <!-- Ajoutez le contenu de votre page ici -->
+
+
+
+
+        
+      <section id="about">
+        <div>
+          <article class="MATH">
+
+            <h2 class="h2" id="educ">À propos
+              <br>
+              <br> </h2>
+              
+            <img src="assets/images/My_pic.jpeg" alt="imge">
+
+            
+
+              <div class="justified-text">
+                <p>
+                  Bojour, Je suis Ilham TIRACH, élève ingénieur en 2ème année 
+                       à l'École  Nationale Supérieure   d'Informatique et d'Analyse 
+                       des Systèmes (ENSIAS), spécialisé en Business Intelligence 
+                       and Analytics. 
+                       
+                       Je suis passionné par la data science et les mathématiques.
+                        J'apprécie l'application des méthodes statistiques pour explorer
+                         et analyser les données. Une fois que j'aurai les données en main, 
+                         je pourrai  les transformer en informations pertinentes, que ce soit par
+                          une analyse exploratoire et une visualisation des données, ou par l'utilisation 
+                          d'algorithmes de machine learning pour créer des modèles prédictifs. Mon objectif 
+                          est d'utiliser ces compétences pour vous aider prendre les meilleures décisions.
+                       </p>
+                     
+                  
+                </p>
+              </div>
+             
+          </article>
+
+          <br>
+          <br>
+
+
+          <div class="containerX">
+            <div class="left-half">
+              <!-- Contenu de la première moitié -->
+              <h2>Informations personnelles
+                <br>
+                <br>
+                <br>
+
+              </h2>
+              <ul>
+                <li>Nom : Ilham Tirach</li>
+                <br>
+                <li>Domaines d'intéret : Data Science/Data Analytics</li>
+                <br>
+                <li>Adresse : Ouled Teima, Agadir </li>
+                <br>
+                <li>Email : ilhamtirach@gmail.com  </li>
+                <br>
+                <li>Téléphone : 0648391216</li>
+
+                <br>
+                <br>
+
+                <div class="cv-download">
+                  <a href="https://drive.google.com/file/d/1Oma0p_v9prrdFAN9G1IUN1oIZmqhSZs1/view?usp=sharing" download="Ilham_Tirach_CV.pdf">Télécharger CV</a>
+              </div>
+                
+
+              </ul>
+            </div>
+
+            <div class="right-half">
+              <!-- Contenu de la deuxième moitié -->
+              <h2>Compétences
+                <br>
+                <br>
+              </h2>
+              
+
+              <span>Python</span> <span class="pull-right">95%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+              
+              <span>SQL</span> <span class="pull-right">85%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+
+              <span>Machine Learning</span> <span class="pull-right">90%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+              <span>Data Warehousing</span> <span class="pull-right">80%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+              <span>Talend</span> <span class="pull-right">75%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+              
+              <span>Power BI</span> <span class="pull-right">85%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+              <span>Kafka,Airflow,Docker</span> <span class="pull-right">70%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+
+
+
+
+
+
+
+
+                
+           </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
+      
+
+
+
+
+
+
+
+
+
+
+      
+      
+
+
+      <section class="article">
+        <div class="container">
+          <h2 class="h2" id="educ">Formation</h2>
+          <div class="article-boxes">
+            <!--article class="article-box featured-article">Formation</article-->
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="gold-text">2019-2020</h3>
+                  <p class="article-text">
+                    <b>Lycée Tabari - Ouled Teima</b><br>
+                    <br>
+                    Baccalauréat en sciences physiques - option française<br>
+                    Mention: Très bien
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <div class="text-content">
+                    <h3 class="gold-text">2020-2022</h3>
+                    <p class="article-text">
+                      <b>Faculté des sciences IBN ZOHR - Agadir</b><br><br>
+                      DEUG en sciences mathématiques et applications<br>
+                      Mention: Bien
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <br>
+                  <h3 class="gold-text">2022-En cours</h3>
+                  <div class="article-text">
+                    <b>
+                      Elève ingénieur en 2ème année à l'ENSIAS:<br><br>
+                    </b>
+                    Filière: Business Intelligence & Analytics (BI&A)<br><br>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+
+    
+  
+
+
+
+    <section class="work">
+      <div class="container">
+        <h2 class="h2" id="project">Projets</h2>
+        <div class="work-boxes">
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">Projet de fin de la 2ème année -PFA-</h3>
+              <!-- Add small description of your project  -->
+              <p class="work-text">
+                Automatisation du système de traitement de factures électroniques
+              </p>
+              <!-- Add technologies you used to build the project -->
+              <ol class="work-technologies">
+                <li>Kafka</li>
+                <li>Airflow</li>
+                <li>Python</li>
+                <li>Hugging face</li>
+              </ol>
+            </div>
+            <!-- Update img src and alt attribute  -->
+            <picture class="work-img">
+              <img
+                loading="lazy"
+                src="assets/images/work/AutomateInvoice.jpg"
+                alt="agency elevation"
+              />
+            </picture>
+          </div>
+    
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">Détection d'intrusions dans l'IoT</h3>
+              <!-- Add small description of your project  -->
+              <p class="work-text">
+                Développement d'un modèle de machine learning pour détecter les signes précurseurs d'activités malveillantes dans l'IoT
+              </p>
+              <ol class="work-technologies">
+                <li>Python</li>
+                <li>Scikit-learn</li>
+                <li>Keras</li>
+              </ol>
+            </div>
+            <!-- Update img src and alt attribute  -->
+            <picture class="work-img">
+              <img
+                loading="lazy"
+                src="assets/images/work/IOT_PROJECT.jpg"
+                alt="portfolio template"
+              />
+            </picture>
+          </div>
+    
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">Stage de la première année</h3>
+              <!-- Add small description of your project  -->
+              <p class="work-text">
+                Intégration et analyse des données de la bourse de Casablanca
+              </p>
+              <ol class="work-technologies">
+                <li>Talend</li>
+                <li>Power BI</li>
+              </ol>
+            </div>
+            <!-- Update img src and alt attribute  -->
+            <picture class="work-img">
+              <img
+                loading="lazy"
+                src="assets/images/work/stock.jpg"
+                alt="contribute dev"
+              />
+            </picture>
+          </div>
+    
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">Projet de fin de la première année -PFA-</h3>
+              <!-- Add small description of your project  -->
+              <p class="work-text">
+                Exploration et comparaison des librairies python en terme de performance pour machine learning et Data science.
+              </p>
+              <ol class="work-technologies">
+                <li>Python</li>   
+                <li>Scikit-learn </li>
+                <li>Numpy</li>    
+                <li>TensorFlow</li>
+                <li>pandas</li>   
+                <li>PyTorch</li>
+                <li>Keras</li>    
+                <li>Gradient boosting librairies</li>
+              </ol>
+            </div>
+            <!-- Update img src and alt attribute  -->
+            <picture class="work-img">
+              <img
+                loading="lazy"
+                src="assets/images/work/les_librairies.png"
+                alt="portfolio template"
+              />
+            </picture>
+          </div>
+    
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">Application de gestion des professeurs d'un établissement</h3>
+              <!-- Add small description of your project  -->
+              <ol class="work-technologies">
+                <br>
+                <li>Oracle Apex</li>   
+                <li>SQL</li>    
+                <li>PL/SQL</li>   
+              </ol>
+            </div>
+            <!-- Update img src and alt attribute  -->
+            <picture class="work-img">
+              <img
+                loading="lazy"
+                src="assets/images/work/APP1.png"
+                alt="portfolio template"
+              />
+            </picture>
+          </div>
+    
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">Analyse des données d'un hôpital </h3>
+              <!-- Add small description of your project  -->
+              <ol class="work-technologies">
+
+                <br>
+                <li>Power BI</li>   
+                <li>Excel</li>    
+              </ol>
+            </div>
+            <picture class="work-img">
+              <img
+                loading="lazy"
+                src="assets/images/work/hôpital.avif"
+                alt="portfolio template"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/section-->
+
+    <section id="certifs">
+      <h2 class="h2" id="educ">Certificats
+        <br>
+        <br>
+      </h2>
+      <!-- Contenu de la section "Certificats" -->
+      
+
+        
+      <div class="photos">
+        <img src="assets/images/certifs/Coursera 6E8BK49UNPDY-1.png" alt="Photo 1">
+        <img src="assets/images/certifs/Coursera CDJ5S73ZKZCA-1.png" alt="Photo 2">
+        <img src="assets/images/certifs/Certificat_power_BI-1.png" alt="Photo 3">
+        <img src="assets/images/certifs/GNG.png" alt="Photo 4">
+    </div>
+  
+
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <!-- Contenu de la section "Contact" -->
+  </section>
+</div>
+
+
+    
+      <!-- I write blog posts on dev.to at https://dev.to/devsyedmohsin. I have linked my articles accordingly, so please update the article title, description, and link accordingly. For example, if you write an article on Medium, link your article to Medium. Also, don't forget to update the reaction count. -->
+
+            
+      <!-- Update skills-img src, alt  and title attributes I have added some other logos in assets/images/skill for your convenience feel free to pick one if required  -->
+
+      
+      <!-- Replace testimonials, author name, author job, img src and, alt attributes -->
+
+      
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Envoyer un message</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <!-- Please comment this component if you're not available for hire -->
+              <strong href="#" class="hire-alert">
+                <span class="indicator"></span>
+                Diponible 
+              </strong>
+              
+              <p class="contact-text">
+                
+                Pour plus d'informations, et si vous avez des question , merci de me laisser un message .
+            
+              </p>
+              <!-- Replace src with your signatures and name -->
+              <img
+                src="assets/images/sign_img.jpg" 
+                alt="Ilham TIRACJ"
+                class="signatures"
+                loading="lazy"
+                style="width: 250px;"
+              />
+            </div>
+
+
+
+            <form action="https://formspree.io/f/xpzvknyq" method="POST">
+
+              <label for="name">Votre Nom :</label>
+              <input type="text" name="name" id="name" required>
+            
+              <label for="email">Votre email :</label>
+              <input type="email" name="email" id="email" required>
+            
+              <label for="message">Votre message :</label>
+              <textarea name="message" id="message" required></textarea>
+            
+              <button type="submit">Envoyer</button>
+            </form>
+
+
+
+
+
+
+
+
+
+           
+
+
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Update href and src attributes -->
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="https://github.com/ilhti" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/github.svg"
+                    alt="GitHub"
+                /></a>
+              </li>
+              
+              <li class="footer-link">
+                <a title="Linkedin" href="https://www.linkedin.com/in/ilham-tirach-8b7195228/" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/linkedin.svg"
+                    alt="Linkedin"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Twitter" href="https://twitter.com/ITirach" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/twitter.svg"
+                    alt="Twitter"
+                /></a>
+              </li>
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; <span>2024</span> - Template designed & developed by <a target="_blank" rel="noopener" href="https://github.com/ilhti">Ilham TIRACH </a>
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
